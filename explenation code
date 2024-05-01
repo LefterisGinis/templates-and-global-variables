@@ -1,0 +1,17 @@
+// temlpates
+var display = document.getElementById("display");
+// create in the index.HTML a <main id="display"></main>
+// getting and cloning the template
+const template1 = document.getElementById("template1")
+// create in the index.HTML a <template id="template1"></template>
+const clone1 = template1.content.cloneNode(true);
+// display it
+display.appendChild(clone1);
+// clear the display before adding a template
+display.innerHTML = "";
+// if you dont do it the template will be added to the display
+
+//global variables
+// used in functions and classes even if they are assigned in a different function or class
+var myvar ;
+window.myvarsname = myvar;
